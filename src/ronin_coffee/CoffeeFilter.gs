@@ -30,7 +30,7 @@ class CoffeeFilter implements Filter {
   }
 
   function getLessSource(req: HttpServletRequest): String {
-    var resourceAsStream = req.ServletContext.getResourceAsStream(req.PathInfo)
+    var resourceAsStream = req.ServletContext.getResourceAsStream(req.ServletPath + "/" + req.PathInfo)
     return new Scanner(resourceAsStream).useDelimiter("\\A").next()
   }
 
