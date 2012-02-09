@@ -72,9 +72,9 @@ var observer = new ITemplateObserver() {
 
 context.addServlet(new ServletHolder(new HttpServlet(){
   override function service(req: javax.servlet.ServletRequest, res: javax.servlet.ServletResponse) {
-    ITemplateObserver.ACCESS.pushTemplateObserver(observer)
+    ITemplateObserver.MANAGER.pushTemplateObserver(observer)
     ExampleTemplate.render(res.Writer, coffeeImpl )
-    ITemplateObserver.ACCESS.popTemplateObserver()
+    ITemplateObserver.MANAGER.popTemplateObserver()
   }
 }), "/template_test")
 context.ResourceBase = "."
