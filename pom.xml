@@ -40,7 +40,7 @@
     <dependency>
       <groupId>org.gosu-lang.ronin</groupId>
       <artifactId>ronin</artifactId>
-      <version>0.9.1-SNAPSHOT</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>rhino</groupId>
@@ -56,7 +56,7 @@
     <dependency>
       <groupId>org.gosu-lang.ronin</groupId>
       <artifactId>ronin-test</artifactId>
-      <version>0.9.1-SNAPSHOT</version>
+      <version>0.9.1</version>
     </dependency>
     <dependency>
       <groupId>org.mortbay.jetty</groupId>
@@ -108,7 +108,7 @@
           </execution>
         </executions>
         <configuration>
-          <gosuVersion>0.9-SNAPSHOT</gosuVersion>
+          <gosuVersion>0.9-8</gosuVersion>
         </configuration>
       </plugin>
     </plugins>
